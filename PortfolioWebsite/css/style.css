@@ -1,0 +1,300 @@
+/*GENERAL*/
+* {
+    margin :0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*ORGANISATION DES PAGES*/
+body {
+    display : flex;
+    flex-direction: column;
+    /*background-color: red;*/
+    height:100%
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    top: 0;
+    z-index: 9999;
+    position: sticky;
+    height: 15vh;
+    align-items: center;
+}
+
+nav img {
+    width: 8vw;
+    height: 10vh;
+}
+
+nav a {
+    padding-right: 2%;
+}
+
+
+nav a.button {
+    font-size: 2vw;
+    text-decoration: none;
+    color : black;
+}
+
+nav a.button:hover {
+    font-size: 2.5vw;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height : 25vh;
+}
+
+footer img {
+    height: 15vh;
+    padding-bottom: 10%;
+}
+
+
+footer p {
+    color: white;
+    font-size: 1.2vw;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer a:hover {
+    transform: scale(1.2);
+}
+
+
+/*HOME PAGE*/
+
+#presentation {
+    background-color: #00916E;
+    display: flex;
+    flex-direction: column;
+}
+
+#presentation img {
+    width: 30vw;
+    height: 55vh;
+}
+
+#presentationName {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 2%;
+}
+
+#presentationName p {
+    font-size: 5vw;
+}
+
+#presentationName p::first-letter {
+    color: red;
+}
+
+#presentationTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+#presentationTitle p {
+    font-size: 3vw;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.projectsTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectsTitle p {
+    padding-top: 1%;
+    padding-bottom: 2%;
+    font-size: 3vw;
+}
+
+.projectsList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    width : 45%;
+    margin-bottom: 4%;
+}
+
+.project .projectName {
+    padding-top: 1%;
+}
+
+.project .projectDescription {
+    padding-top: 1%;
+    font-size: 1.5vw;
+    color: grey;
+}
+
+.project .button {
+    font-size: 2vw;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    padding : 3px;
+}
+
+.project a:hover {
+    background-color: grey;
+}
+
+.projectRole {
+    font-size: 2vw;
+    padding-top: 0.5%;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/*ABOUT ME*/
+
+#myPresentation {
+    background-color: #00916E;
+    font-size : 1.5vw;
+    padding-left : 10%;
+    padding-right: 10%;
+    padding-top : 5%;
+    padding-bottom : 5%;
+    line-height : 1.2;
+}
+
+#resume {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    text-align: center;
+    align-items: center;
+    padding-bottom : 2%;
+}
+
+#resume img {
+    width : 60vw;
+    padding-bottom: 3%;
+}
+
+#resume p {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 2.5vw;
+}
+#resume a:hover {
+    background-color: grey;
+}
+
+#resume .button {
+    font-size: 3.5vw;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    padding : 1%;
+}
+
+/*PROJECT PAGE*/
+
+.gameIntro {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    padding-bottom: 2%;
+}
+
+.gameIntro .gameName {
+    color : white;
+    font-size: 2.5vw;
+    padding-top: 3%;
+}
+
+.gameIntro .gameRole {
+    color : #00916E;
+    font-size: 2vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.gameIntro iframe {
+    width:50vw;
+    height:60vh;
+}
+
+.gameContext {
+    background-color : #00916E;
+    display: flex;
+    flex-direction: column;
+}
+
+.gameContext p {
+    text-align: center;
+    padding-bottom: 1%;
+    font-size: 1.5vw;
+}
+
+.gameContext .gameContextTitle {
+    color : white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 2.5vw;
+}
